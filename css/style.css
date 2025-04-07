@@ -61,6 +61,7 @@ nav a.active {
     text-align: center;
     padding: 60px 20px;
     position: relative;
+    border-bottom: 2px solid #64ffda; 
 }
 
 .hero-content {
@@ -180,6 +181,14 @@ nav a.active {
     padding: 20px;
     max-width: 1100px; /* Maximale breedte */
     margin: auto; /* Zorgt dat het gecentreerd blijft */
+}
+
+.about h2 {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #64ffda;
+        font-size: 3em;
+        margin-bottom: 10px;
 }
 
 .about-cards {
@@ -364,7 +373,7 @@ nav a.active {
     align-items: center;
     margin: auto;
     padding: 20px;
-    background-color: #1E1E1E;
+    background-color: #121212;
     color: #EAE0D5;
     border-radius: 10px;
     text-align: center;
@@ -376,7 +385,7 @@ nav a.active {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     color: #64ffda;
-    font-size: 1.8em;
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
@@ -389,7 +398,7 @@ nav a.active {
 
 /* Projectcard */
 .project-card {
-    background-color: #1E1E1E;
+    background: #1E1E1E;
     padding: 20px;
     border: 1px solid #4dd6a0;
     border-radius: 10px;

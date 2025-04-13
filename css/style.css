@@ -22,6 +22,10 @@ a {
     color: inherit;
 }
 
+.intern {
+    color: #64ffda;
+}
+
 
 
 
@@ -611,3 +615,157 @@ nav a.active {
         width: 90%;
     }
 }
+
+
+/* =======================
+   CV Pagina
+========================== */
+
+/* Container */
+.cv-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .cv-header {
+    background-color: #1E1E1E;
+    padding: 40px 20px;
+    border-bottom: 2px solid #64ffda;
+    text-align: center;
+  }
+  
+  .cv-header h1 {
+    margin-bottom: 10px;
+    font-size: 3em;
+  }
+  
+  .cv-contact {
+    margin-top: 20px;
+  }
+  
+  .cv-contact a {
+    color: #64ffda;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* Secties */
+  .cv-section-wrapper {
+    margin: 40px 0;
+  }
+  
+  .cv-section-wrapper p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cv-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+  
+  .cv-section-item {
+    background: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 255, 200, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraal positioneren van alles binnenin */
+  }
+  
+  .cv-section-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #64ffda;
+  }
+  
+  .cv-section-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  
+  .cv-section-item li {
+    background-color: #1E1E1E;
+    color: #EAE0D5;
+    padding: 5px 10px; /* Binnenruimte */
+    margin: 2px 0; /* Ruimte tussen items */
+    border-radius: 5px; /* Afgeronde hoeken */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Zachte overgang voor hover-effect */
+    text-align: center;
+  }
+  
+  /* Vaardigheden lijst netjes maken */
+  .cv-skills-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+  }
+  
+  .cv-skills-list li {
+    background-color: #1a6f73;
+    color: #121212;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cv-skills-list li:hover {
+    background-color: #64ffda;
+    transform: translateY(-3px);
+  }
+
+  
+  .btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1a6f73;
+    color: #EAE0D5;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-download:hover {
+    background-color: #64ffda;
+  }
+  
+  
+  /* Responsive design */
+  @media (min-width: 768px) {
+    .cv-section {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .cv-section-item {
+      flex: 1;
+      min-width: 300px;
+    }
+  }
+  

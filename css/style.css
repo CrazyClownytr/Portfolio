@@ -1,0 +1,811 @@
+/* Algemene instellingen */
+body {
+    background-color: #121212;
+    color: #EAE0D5;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #64ffda;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.intern {
+    color: #64ffda;
+}
+
+
+
+
+/* Navbar */
+.navbar {
+    background-color: #1E1E1E;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a:hover {
+    color: #64ffda;
+}
+
+
+nav a.active {
+    color: #64ffda;
+    border-bottom: 2px solid #64ffda; /* optioneel: underline effect */
+}
+
+
+
+
+/* Hero section */
+.hero {
+    background: #1E1E1E url('your-background-image.jpg') center/cover;
+    color: #EAE0D5;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+    border-bottom: 2px solid #64ffda; 
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 10px 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Algemene knopstijl */
+.btn {
+    padding: 12px 25px;
+    background-color: #64ffda;
+    color: #121212;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #1a6f73;
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+
+
+
+/* Intro section */
+.intro {
+    background-color: #121212;
+    padding: 40px 20px;
+}
+
+.intro .intro-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro h2, .intro h3 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.intro p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.intro .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;  /* Laat de items vloeiend doorlopen naar een nieuwe rij */
+    gap: 15px;        /* Ruimte tussen de items */
+    padding: 0;
+    list-style: none; /* Verwijdert de standaard bullets */
+    justify-content: center; /* Centreert de skills */
+}
+
+.skills-list li {
+    background-color: #1a6f73;
+    color: #121212;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex; /* Flexbox inschakelen */
+    align-items: center; /* Verticale uitlijning */
+    gap: 8px; /* Ruimte tussen icoon en tekst */
+    transition: all 0.3s ease-in-out;
+}
+
+
+.skills-list li:hover {
+    background-color: #64ffda; /* Iets donkerder groen */
+    transform: translateY(-3px); /* Kleine hover effect */
+}
+
+.skills-list img {
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+/* about.html */
+
+.about-container, .hobby-container {
+    display: flex;
+    flex-wrap: wrap; /* Zorgt dat ze op een nieuwe rij springen als er geen ruimte is */
+    justify-content: center; /* Centreert de kaarten */
+    gap: 20px; /* Ruimte tussen de kaarten */
+    padding: 20px;
+    max-width: 1100px; /* Maximale breedte */
+    margin: auto; /* Zorgt dat het gecentreerd blijft */
+}
+
+.about h2 {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #64ffda;
+        font-size: 3em;
+        margin-bottom: 10px;
+}
+
+.about-cards {
+    background: #1E1E1E;
+    border: 2px solid #64ffda; /* Groene accentkleur */
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 255, 200, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 280px; /* Breedte van de kaarten */
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(0, 255, 200, 0.5);
+}
+
+
+.about-cards h3 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    color: #64ffda;
+}
+
+
+.about-cards p {
+    font-size: 16px;
+    color: #EAE0D5;
+}
+
+.about-cards a {
+    display: inline-block;
+    margin-top: auto;
+    padding: 10px 10px;
+    background-color: #64ffda; /* Neon groene achtergrondkleur */
+    color: #121212; /* Donkere tekstkleur */
+    text-decoration: none; /* Verwijder onderstreping */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px; /* Zachte hoeken voor een knopstijl */
+    transition: all 0.3s ease; /* Maakt de hover animatie vloeiender */
+}
+
+.about-cards a:hover {
+    background-color: #4dd6a0; /* Iets donkerder groen bij hover */
+    color: #121212; /* Houd de tekstkleur donker */
+    box-shadow: 0px 4px 10px rgba(0, 255, 200, 0.3); /* Schaduw om de link te laten opvallen */
+    transform: translateY(-3px); /* Subtiele lift bij hover */
+}
+
+.about-cards a:active {
+    transform: translateY(1px); /* Wanneer de link wordt geklikt, beweegt het iets naar beneden */
+}
+
+.about-cards ul {
+    justify-content: center;
+    list-style-type: none; /* Verwijdert standaard opsommingstekens */
+    padding: 0; /* Verwijdert standaard padding */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Verdeel in 3 gelijke kolommen */
+    gap: 10px; /* Ruimte tussen de items */
+}
+
+.about-cards li {
+    background-color: #1E1E1E;
+    color: #EAE0D5;
+    padding: 5px 10px; /* Binnenruimte */
+    margin: 2px 0; /* Ruimte tussen items */
+    border-radius: 5px; /* Afgeronde hoeken */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Zachte overgang voor hover-effect */
+    text-align: center;
+}
+
+
+
+
+
+/* Contact sectie */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact-card {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0px 4px 10px rgba(0, 255, 200, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    border: 2px solid #64ffda;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(0, 255, 200, 0.5);
+}
+
+.contact-card h3 {
+    font-size: 1.6em;
+    font-family: "Bebas Neue", sans-serif;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.contact-card .btn {
+    border: 2px solid #64ffda;
+    padding: 5px 15px;
+}
+
+.contact-card .btn:hover {
+    background-color: #64ffda;
+    color: #121212;
+}
+
+.contact-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    filter: drop-shadow(0px 4px 6px rgba(0, 255, 200, 0.3));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.contact-card:hover img {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 6px 10px rgba(0, 255, 200, 0.5));
+}
+
+.contact-card-link {
+    text-decoration: none;
+    width: 250px;
+    display: block;
+}
+
+
+
+
+
+/* Projecten sectie */
+.project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    background-color: #121212;
+    color: #EAE0D5;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 255, 200, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-container h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #64ffda;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Projectcard */
+.project-card {
+    background: #1E1E1E;
+    padding: 20px;
+    border: 1px solid #4dd6a0;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 255, 200, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 255, 200, 0.4);
+}
+
+
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    max-height: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-image:hover img {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #EAE0D5;
+    flex-grow: 1; /* Zorgt ervoor dat de paragraaf niet in de weg zit en de ruimte opvult */
+}
+
+.tech-stack {
+    margin-bottom: 5px;
+    flex-shrink: 0; /* Zorg ervoor dat de tech-stack niet inkrimpt */
+}
+.tech-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+.tech-list li {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+
+    background-color: #1a6f73;
+    color: #121212;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.tech-list li:hover {
+    background-color: #64ffda;
+    transform: translateY(-3px);
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    flex-shrink: 0; /* Zorg ervoor dat de links niet inkrimpen */
+}
+
+.project-links .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #4dd6a0;
+    color: #121212;
+    border: 2px solid #4dd6a0;
+    display: inline-block;
+
+    
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+   
+.project-links .btn:hover {
+    background-color: #64ffda;
+    border-color: #64ffda;
+    transform: translateY(-3px);
+}
+
+.github-link, .btn {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.project-links .github-link {
+     background-color: #333;
+    color: #fff;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.project-links .github-link:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+    
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .project-container h2 {
+        font-size: 28px;
+    }
+    .project-card h3 {
+        font-size: 20px;
+    }
+    .project-card p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+/* Stijl voor de projectdetailpagina */
+.project-detail {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Banner afbeelding bovenaan de pagina */
+.project-banner {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Lijst stijlen */
+.project-detail ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-detail li {
+    background: #4dd6a0;
+    color: #121212;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Galerij stijlen */
+.gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+.project-overview {
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.project-overview h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project-overview p {
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+    color: #4dd6a0;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.feature img {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    text-align: center;
+    max-width: 600px;
+    color: #4dd6a0;
+}
+
+
+
+/* Responsief ontwerp */
+@media (max-width: 768px) {
+    .contact-grid, .about-container, .hobby-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-link {
+        width: 90%;
+    }
+}
+
+
+/* =======================
+   CV Pagina
+========================== */
+
+/* Container */
+.cv-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .cv-header {
+    background-color: #1E1E1E;
+    padding: 40px 20px;
+    border-bottom: 2px solid #64ffda;
+    text-align: center;
+  }
+  
+  .cv-header h1 {
+    margin-bottom: 10px;
+    font-size: 3em;
+  }
+  
+  .cv-contact {
+    margin-top: 20px;
+  }
+  
+  .cv-contact a {
+    color: #64ffda;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  /* Secties */
+  .cv-section-wrapper {
+    margin: 40px 0;
+  }
+  
+  .cv-section-wrapper p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cv-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+  
+  .cv-section-item {
+    background: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 255, 200, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraal positioneren van alles binnenin */
+  }
+  
+  .cv-section-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #64ffda;
+  }
+  
+  .cv-section-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    justify-items: center;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  
+  .cv-section-item li {
+    background-color: #1E1E1E;
+    color: #EAE0D5;
+    padding: 5px 10px; /* Binnenruimte */
+    margin: 2px 0; /* Ruimte tussen items */
+    border-radius: 5px; /* Afgeronde hoeken */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Zachte overgang voor hover-effect */
+    text-align: center;
+  }
+  
+  /* Vaardigheden lijst netjes maken */
+  .cv-skills-list ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+  }
+  
+  .cv-skills-list li {
+    background-color: #1a6f73;
+    color: #121212;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cv-skills-list li:hover {
+    background-color: #64ffda;
+    transform: translateY(-3px);
+  }
+
+  
+  .btn-download {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1a6f73;
+    color: #EAE0D5;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-download:hover {
+    background-color: #64ffda;
+  }
+  
+  
+  /* Responsive design */
+  @media (min-width: 768px) {
+    .cv-section {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .cv-section-item {
+      flex: 1;
+      min-width: 300px;
+    }
+  }
+  

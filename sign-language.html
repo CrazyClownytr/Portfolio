@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gebarentaal Website - Mijn Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="projects.html">
+            <h1>Mijn Project - Gebarentaal Website</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <img src="img/sign-language/sign-body.png" alt="Gebarentaal Project" class="project-banner">
+
+        <section>
+            <h2>Over het project</h2>
+            <p>Voor het keuzevak 'Gebarentaal bij intake' aan de Hogeschool Rotterdam hebben we een gebarentaal-tool ontwikkeld.
+               Het doel was om studenten te ondersteunen bij het leren en oefenen van gebarentaal tijdens intakegesprekken.</p>
+            <p>De website bevat interactieve quizzen, een woordenboek met video's en een admin-pagina voor de docenten om studenten te beheren.</p>
+        </section>
+
+        <section>
+            <h2>Wat heb ik gedaan?</h2>
+            <ul>
+                <li>De basis van de homepage opgezet en de structuur bepaald.</li>
+                <li>Tailwind CSS toegepast om een moderne en responsieve lay-out te creëren.</li>
+                <li>Een interactieve woordenboekpagina gebouwd met zoek- en filterfuncties.</li>
+                <li>JWT-authenticatie geïmplementeerd voor beveiligde toegang.</li>
+                <li>Een admin-pagina gemaakt om studenten toe te voegen, te verwijderen en te bewerken.</li>
+                <li>Camera- en handtracking verbeterd voor correcte gebarenherkenning.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Galerij</h2>
+            <div class="gallery">
+                <img src="img/sign-language/sign-header.png" alt="header pagina">
+                <img src="img/sign-language/sign-flashcards.png" alt="flashcards tussenpagina">
+                <img src="img/sign-language/sign-difficult.png" alt="sign-difficult pagina">
+                <img src="img/sign-language/sign-spelling.png" alt="spelling tussenpagina">
+                <img src="img/sign-language/sign-spelling-quiz.png" alt="spelling quiz Pagina">
+                <img src="img/sign-language/sign-vocab.png" alt="Woordenboek Pagina">
+                <img src="img/sign-language/sign-admin.png" alt="admin-pagina">
+            </div>
+        </section>
+
+        <section class="project-links">
+           <a href="projects.html" class="btn">Terug naar projecten</a>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="projects.html">
+            <h1>Mijn Project-Druppelz</h1>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="project-detail">
+        <img src="img/debatemates/debatemates-view.png" alt="DebateMates Project" class="project-banner">
+
+        <section>
+            <h2>Over het project</h2>
+            <p> DebateMates is een interactieve AI-applicatie waarin twee bots – <em>ProBot</em> en <em>ContraBot</em> –
+                automatisch een debat voeren over een stelling die de gebruiker invoert. De bots gebruiken krachtige
+                taalmodellen via Azure OpenAI en zijn aangestuurd met LangChain. Voor relevante documentondersteuning
+                wordt een FAISS-vectorstore gebruikt.</p>
+        </section>
+
+        <section>
+            <h2>Wat heb ik gedaan?</h2>
+            <ul>
+                <li>Een real-time debatsysteem opgezet met event streaming (Server-Sent Events).</li>
+                <li>Gebruikersinterface gebouwd met HTML, CSS en JavaScript (client-side).</li>
+                <li>Server opgebouwd in Node.js met Express en LangChain-integratie.</li>
+                <li>Een documentzoekfunctie geïmplementeerd op basis van PDF-embeddings en FAISS vector search.</li>
+                <li>GitHub repository opgezet en deployment voorbereid voor eindpresentatie.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Features</h2>
+            <ul>
+                <li>Gebruiker voert een stelling in → live debat tussen twee bots wordt getoond.</li>
+                <li>Stemoptie aan het einde van het debat (wie won?).</li>
+                <li>Document search: gebruikers kunnen informatie opvragen uit PDF-documenten die ge-embed zijn.</li>
+                <li>LangChain en Azure OpenAI zorgen voor intelligente, contextuele argumentatie.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Galerij</h2>
+            <video controls width="100%" style="max-width: 800px;">
+                <source src="videos/debatemates-video.mp4" type="video/mp4">
+                Je browser ondersteunt dit videotype niet.
+            </video>
+
+        </section>
+
+        <section class="project-links">
+            <a href="https://github.com/CrazyClownytr/DebateMates" target="_blank" class="github-link">Bekijk de code op
+                GitHub</a>
+            <a href="projects.html" class="btn">Terug naar projecten</a>
+        </section>
+    </main>
+
+</body>

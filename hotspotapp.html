@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HotspotApp (React Native / Expo) - Mijn Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="projects.html"><h1>Mijn Project – HotspotApp (React Native / Expo)</h1></a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-detail">
+        <img src="img/hotspotapp/app-main.png" alt="HotspotApp Overzicht" class="project-banner">
+
+        <section>
+            <h2>Over het project</h2>
+            <p>
+                De HotspotApp is een React Native / Expo applicatie die hotspots in de buurt toont (bijv.
+                bezienswaardigheden, winkels of public wifi). De app toont hotspots op een kaart, haalt data van een online JSON-bron,
+                slaat extra lokale informatie op (zoals favorieten), ondersteunt meerdere lay-outs en meertaligheid,
+                en werkt ook offline (lijstweergave blijft beschikbaar zonder internet).
+            </p>
+        </section>
+
+        <section>
+            <h2>Wat heb ik gedaan?</h2>
+            <ul>
+                <li>Project opgezet in Expo (React Native) met geordende componenten (herbruikbare .jsx bestanden).</li>
+                <li>Hotspots geladen van een online JSON-bron (JSON bestand op een webserver).</li>
+                <li>Lokale opslag geïmplementeerd met AsyncStorage voor favorieten en instellingen (blijft na restart).</li>
+                <li>Kaart en locatie toegevoegd met react-native-maps (toon huidige locatie en hotspot-locaties).</li>
+                <li>Layout modes via een Settings-scherm (bijv. lijst/kaart/donkere modus). Instelling blijft bewaard.</li>
+                <li>Meertaligheid (minimaal 3 talen) via een apart JSON-bestand en een taal-selector die de keuze bewaart.</li>
+                <li>Routing / navigation met react-navigation: lijst → detail → kaart (zoom op geselecteerde hotspot).</li>
+                <li>Screencast gemaakt waarin code, werking en alle eisen worden gedemonstreerd (max 15 min).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Stappenplan / Implementatie</h2>
+
+            <div class="feature">
+                <img src="img/hotspotapp/data-online.png" alt="1 - Data source">
+               <p> Hotspots komen van een online JSON bron (JSON bestand op een webserver).</p>
+            </div>
+
+            <div class="feature">
+                <img src="img/hotspotapp/favorites.png" alt="2 - Local storage">
+                <p>Favorieten/likes worden opgeslagen met AsyncStorage.</p>
+            </div>
+
+            <div class="feature">
+                <img src="img/hotspotapp/locatie.png" alt="3 - Maps & Location">
+               <p>Kaart toont huidige locatie en hotspot-markers; selecting a list item navigates en zoomt in op marker.</p>
+            </div>
+
+            <div class="feature">
+                <img src="img/hotspotapp/language.png" alt="4 - Settings & Layout">
+                <p>Layout modes (lijst/kaart) en thema kunnen worden ingesteld en blijven bewaard.</p>
+                <p>Minimaal 3 talen in een extern JSON-bestand; gebruiker kiest taal in instellingen.</p>
+            </div>
+
+            <div class="feature">
+                <img src="img/hotspotapp/offline.png" alt="6 - Offline">
+               <p>App cached de JSON en lokale data zodat de lijstweergave zonder internet werkt.</p>
+            </div>
+        </section>
+
+        <section class="project-links">
+            <a href="https://github.com/CrazyClownytr/HotspotApp" target="_blank" class="github-link">Bekijk de code op GitHub</a>
+            <a href="projects.html" class="btn">Terug naar projecten</a>
+        </section>
+    </main>
+</body>
+
+</html>
